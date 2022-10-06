@@ -1,0 +1,59 @@
+Algoritmo "lanchonete"
+// Disciplina   : [Linguagem e Lógica de Programação] 
+// Professor   : Antonio Carlos Nicolodi 
+
+//1 – X-Salada
+//2 – X-Bacon
+//3 – X-Egg
+//4 – Refrigerante
+//5 – Finalizar pedido
+
+
+Var
+totalPedido: real
+item: inteiro
+
+
+Inicio
+
+escreval("Menu Lanchonete")
+escreva()
+totalPedido <- 0.0
+item <- 0
+     repita
+     escreval("1 - X-Salada (5,30)")
+     escreval("2 - X-Bacon (6,00)")
+     escreval("3 - X-Egg (6,70)")
+     escreval("4 - Refrigerante (3,20)")
+     escreval("5 - Finalizar pedido")
+     escreva("Escolha um item do menu: ")
+     leia(item)
+     
+     escolha (item)
+             caso1
+                  escreval("Você escolheu X-Salada")
+                  totalPedido <- totalPedido + 5.30
+
+             caso 2
+                  escreval("Você escolheu X-Bacon")
+                  totalPedido <- totalPedido + 6.00
+             caso 3
+                  escreval("Você escolheu X-Egg")
+                  totalPedido <- totalPedido + 6.70
+             caso 4
+                  escreval("Você escolheu Refrigerante")
+                  totalPedido <- totalPedido + 3.20
+             caso 5
+                  escreval("Pedido finalizado")
+                  outrocaso
+                  escreval("Item inexistente")
+
+     fimescolha
+     ate item = 5
+     
+     escreval("O total do seu pedido é: ", totalPedido)
+
+     
+
+
+Fimalgoritmo
